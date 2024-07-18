@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AAT - Appointment Booking Form</title>
+  <link rel="stylesheet" href="assets/css/appform.css">
+  <link
+  rel="shortcut icon"
+  href="assets/images/png/logo-black.png"
+  type="image/x-icon"
+/>
+</head>
+<body>
+ 
+  <section class="appointment-section">
+    <div class="container">
+      <h1>Book an Appointment</h1>
+      <form class="appointment-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="170acd09-09c5-4bff-b938-62e8bd7d0bdc">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Preferred Time</label>
+          <input type="time" id="time" name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn">Book Appointment</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
